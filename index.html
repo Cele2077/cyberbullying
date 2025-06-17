@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cyberbullying</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #0d6efd;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0b5ed7;
+        }
+
+        #infoSection {
+            display: none;
+            max-width: 900px;
+            background-color: #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        #infoSection h2 {
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cyberbullying</h1>
+
+    <a class="button" href="https://editor.p5js.org/Cele86/sketches/7sDrd22qU" target="_blank">Ir al proyecto</a>
+    <button class="button" onclick="mostrarInfo()">¿Qué es el cyber bullying?</button>
+
+    <div id="infoSection">
+        <h2>¿Qué es el cyberbullying?</h2>
+        <p>
+            El acoso cibernético suele ser sistemático y extenderse durante un período más o menos prolongado.
+            Un dato llamativo es que las víctimas son en su mayoría mujeres, pero que también las agresoras son en su mayoría chicas.
+            Los más vulnerables son los niños de entre 10 y 17 años de edad que cuentan con dispositivos móviles y acceso abierto a redes sociales.
+        </p>
+
+        <h3>Causas del ciberbullying</h3>
+        <ul>
+            <li>El uso de redes sociales se ha extendido incluso entre la infancia, lo que le pone en riesgo de sufrir ciberbullying.</li>
+            <li>El anonimato de Internet permite la proliferación de usuarios que lo aprovechan con fines vejatorios o humillantes respecto a terceras personas.</li>
+            <li>Los valores y la educación de la persona acosadora son determinantes para motivarle o desmotivarle en este tipo de acciones.</li>
+            <li>La falta de información de los usuarios/as más jóvenes les hace participar en situaciones de riesgo que pueden afectar a su intimidad y su privacidad.</li>
+        </ul>
+
+        <p>
+            La conducta del acosador suele caracterizarse por ser intencional, persistente y agresiva.
+            Se señala como elemento característico lo que se llama “la intención de daño”, es decir, la evidencia de que existe un definido propósito de perjudicar a la víctima,
+            que puede terminar sufriendo un deterioro en su autoestima y padeciendo efectos en su personalidad,
+            como una mayor tendencia a la introversión, angustia, depresión, pérdida de interés en el aprendizaje,
+            fracaso social, miedos de diversa naturaleza, cefaleas, náuseas, vómitos, adicciones, episodios psicóticos y pensamientos o intentos de suicidio, en los casos más dramáticos.
+        </p>
+
+        <h3>Cómo prevenir y enfrentarse al cyberbullying</h3>
+        <ul>
+            <li>Enséñales la importancia de mantener protegida su privacidad y no compartir nunca información personal.</li>
+            <li>Fórmales y da ejemplo respecto al contenido que se comparte en Internet.</li>
+            <li>Asegúrate de que los contactos del o la menor son amistades y personas conocidas.</li>
+            <li>Deja claro que les ofreces tu apoyo en cualquier situación de ciberbullying o acoso digital.</li>
+            <li>Si es necesario, aprovecha los cauces legales existentes para denunciar una situación de ciberbullying.</li>
+            <li>Evitar que, en lo posible, el chico tenga una cuenta propia en una red social antes de la edad adecuada.</li>
+            <li>Agrega a tu hijo como amigo en la red social y acuerda tener acceso a su cuenta si es necesario.</li>
+            <li>Establece una buena comunicación con los niños para que te informen si sufren acoso.</li>
+            <li>Observa sus comportamientos y actitudes para detectar posibles señales de acoso.</li>
+            <li>Si tu hijo es víctima de acoso, actúa de inmediato: habla con maestros, cambia números de teléfono, cierra cuentas, y si es necesario, informa a las autoridades.</li>
+            <li>Ayúdale a tener confianza en sí mismo para reducir el riesgo de ser víctima de acoso.</li>
+        </ul>
+    </div>
+
+    <script>
+        function mostrarInfo() {
+            document.getElementById('infoSection').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
