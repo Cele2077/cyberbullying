@@ -1,38 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Cyberbullying</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        .btn {
-            display: block;
-            width: 250px;
-            margin: 20px auto;
-            padding: 15px;
-            font-size: 16px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyberbullying.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section.hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: #eaf0f9;
+    }
+
+    section.hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section.hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section.buttons {
+      background-color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .buttons button {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #0b5ed7;
+    }
+
+    section.content {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      display: none;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Cyberbullying</h1>
-    <a class="btn" href="https://editor.p5js.org/Cele86/sketches/7sDrd22qU" target="_blank">Ir al Proyecto en p5.js</a>
-    <a class="btn" href="explicacion.html">Explicación del Proyecto</a>
-    <a class="btn" href="info.html">¿Qué es el cyber bullying?</a>
+  <header>
+    <h1>Cyberbullying.com</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Juntos contra el cyberbullying</h2>
+    <p>Descubre recursos, herramientas y consejos para prevenir y combatir el ciberacoso en el entorno digital. Infórmate, actúa y protege a quienes te rodean.</p>
+  </section>
+
+  <section class="buttons">
+    <button onclick="window.location.href='https://editor.p5js.org/Cele86/sketches/7sDrd22qU'">Ir al proyecto visual</button>
+    <button onclick="mostrarSeccion('info')">¿Qué es el cyberbullying?</button>
+    <button onclick="mostrarSeccion('explicacion')">Explicación del Proyecto</button>
+  </section>
+
+  <section id="info" class="content">
+    <h2>¿Qué es el cyberbullying?</h2>
+    <p>El acoso cibernético suele ser sistemático y extenderse durante un período más o menos prolongado. Un dato llamativo es que las víctimas son en su mayoría mujeres, pero que también las agresoras son en su mayoría chicas.
+    Los más vulnerables son los niños de entre 10 y 17 años edad y que cuentan con dispositivos móviles y acceso abierto a redes sociales.</p>
+
+    <h3>Causas del ciberbullying</h3>
+    <ul>
+      <li>El uso de redes sociales se ha extendido incluso entre la infancia, lo que le pone en riesgo de sufrir ciberbullying.</li>
+      <li>El anonimato de Internet permite la proliferación de usuarios que lo aprovechan con fines vejatorios o humillantes respecto a terceras personas.</li>
+      <li>Los valores y la educación de la persona acosadora son determinantes para motivarle o desmotivarle en este tipo de acciones.</li>
+      <li>La falta de información de los usuarios/as más jóvenes les hace participar en situaciones de riesgo que pueden afectar a su intimidad y su privacidad.</li>
+    </ul>
+
+    <p>La conducta del acosador suele caracterizarse por ser intencional, persistente y agresiva. Se señala como elemento característico lo que se llama “la intención de daño”, es decir, la evidencia de que existe un definido propósito de perjudicar a la víctima, que puede terminar sufriendo un deterioro en su autoestima, y padeciendo efectos en su personalidad, como una mayor tendencia a la introversión, angustia, depresión, pérdida de interés en el aprendizaje, fracaso social, miedos de diversa naturaleza, cefaleas, náuseas, vómitos, adicciones, episodios psicóticos y pensamientos o intentos de suicidio, en los casos más dramáticos.</p>
+
+    <h3>Cómo prevenir y enfrentarse al cyberbullying</h3>
+    <ul>
+      <li>Enséñales la importancia de mantener protegida su privacidad y no compartir nunca información personal.</li>
+      <li>Fórmales y da ejemplo respecto al contenido que se comparte en Internet.</li>
+      <li>Asegúrate de que los contactos del o la menor son amistades y personas conocidos.</li>
+      <li>Deja claro que les ofreces tu apoyo en cualquier situación de ciberbullying o acoso digital.</li>
+      <li>Aprovecha los cauces legales existentes para denunciar una situación de ciberbullying si es necesario.</li>
+      <li>Súmelo como amigo en redes sociales para poder supervisar lo que publica o recibe.</li>
+      <li>Establece una buena comunicación y asegúrate de que confíen en contarte si algo les molesta.</li>
+      <li>Observa cambios en su comportamiento o en su rendimiento escolar.</li>
+      <li>Actúa de inmediato si notas señales de acoso: contacta con autoridades, profesores o cambia sus cuentas digitales.</li>
+      <li>Ayúdales a desarrollar confianza en sí mismos para reducir su vulnerabilidad.</li>
+    </ul>
+  </section>
+
+  <section id="explicacion" class="content">
+    <h2>Explicación del Proyecto</h2>
+    <p>En esta obra se busca criticar la sociedad actual, más específicamente como los niños quedan expuestos al vasto mundo del internet sin supervisión ni los cuidados necesarios, algo que sucede tanto por padres irresponsables, confianza excesiva en las habilidades del infante para no terminar cruzándose con personas dañinas que pueden afectar tanto su moral como su autoestima, al igual que por la búsqueda de los adultos "modernos" de compensar sus infancias graves dándole demasiada libertad a los niños para que "tengan lo que ellos no pudieron disfrutar completamente".</p>
+
+    <p>Se busca apuntar a la reflexión del receptor, tanto de los padres para que se replanteen cómo se supone que debería comportarse un adulto responsable a cargo de un niño, y cómo, en menor medida, un agresor o 'troll' de internet pueda llegar a tener en cuenta quién puede estar del otro lado de la pantalla antes de proceder a atacar sin medir las consecuencias.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Cyberbullying.com - Todos los derechos reservados
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('.content').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo(0, document.getElementById(id).offsetTop - 40);
+    }
+  </script>
 </body>
 </html>
